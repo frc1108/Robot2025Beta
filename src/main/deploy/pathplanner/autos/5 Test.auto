@@ -1,0 +1,67 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.3606430075114182,
+      "y": 5.551187918118234
+    },
+    "rotation": 0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "5 James CSTRB"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "5 James RBTCS"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "5 James CSTRA"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "5 RATRC"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "5 James RCTCS"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "5 CSTFN"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "5 FNTCS"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

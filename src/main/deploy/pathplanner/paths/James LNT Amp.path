@@ -1,0 +1,99 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.2795852864433,
+        "y": 7.435010506384649
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 5.415660285866026,
+        "y": 7.3790380308033345
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 1.8614080864525364,
+        "y": 8.022721499988455
+      },
+      "prevControl": {
+        "x": 3.092802549241462,
+        "y": 7.6775579005703465
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "Pass By Note",
+      "minWaypointRelativePos": 0.8,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 1.0,
+        "maxAcceleration": 1.0,
+        "maxAngularVelocity": 75.0,
+        "maxAngularAcceleration": 100.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "Center",
+      "waypointRelativePos": 0.05,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "CenteringNote"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Stop",
+      "waypointRelativePos": 0.5,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Stop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 1.5,
+    "maxAcceleration": 1.5,
+    "maxAngularVelocity": 75.0,
+    "maxAngularAcceleration": 100.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -89.29845408765478,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": 0.69027719786513,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.8613298085272386,
+      "y": 6.681985456994171
+    },
+    "rotation": 56.26186428273359
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James ASTFL"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James MidFLTS"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James AfterShootTCL"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James CLShoot"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "CenteringNote"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

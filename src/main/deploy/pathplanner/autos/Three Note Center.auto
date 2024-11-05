@@ -1,0 +1,157 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.8539869673657066,
+      "y": 6.696671139317234
+    },
+    "rotation": 60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "CenteringNote"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.6
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "CenterSWToRingB"
+                      }
+                    },
+                    {
+                      "type": "wait",
+                      "data": {
+                        "waitTime": 0.5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "RingBToCenterSW"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CenteringNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.6
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "CenterSWToRingA"
+                      }
+                    },
+                    {
+                      "type": "wait",
+                      "data": {
+                        "waitTime": 0.5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "RingAToLeftSW"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CenteringNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

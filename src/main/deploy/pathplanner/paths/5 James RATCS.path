@@ -1,0 +1,82 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.75,
+        "y": 7.05
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.0882431285922896,
+        "y": 6.515107397933123
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 1.36,
+        "y": 5.55
+      },
+      "prevControl": {
+        "x": 1.9042213479970944,
+        "y": 6.285001711993992
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "Slow",
+      "minWaypointRelativePos": 0.9,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 1.5,
+        "maxAcceleration": 1.5,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 360.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "Shoot",
+      "waypointRelativePos": 0.9,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "ShootBackwards"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 360.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 1.5911402711946594,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": 0.0,
+    "velocity": 0.0
+  },
+  "useDefaultConstraints": false
+}

@@ -1,0 +1,87 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.25,
+      "y": 3.5
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "CenteringNote"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Match49"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.75
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "RightSWToRightCenter"
+                      }
+                    },
+                    {
+                      "type": "wait",
+                      "data": {
+                        "waitTime": 0.5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.1
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

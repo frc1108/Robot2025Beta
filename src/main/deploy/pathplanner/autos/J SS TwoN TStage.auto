@@ -1,0 +1,37 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.8912185097097467,
+      "y": 4.431154316854089
+    },
+    "rotation": -55.00797980144137
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James SSTFCN"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James CNTC"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

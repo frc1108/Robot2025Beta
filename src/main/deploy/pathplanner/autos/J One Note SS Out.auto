@@ -1,0 +1,75 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.890701173173367,
+      "y": 4.420390379242297
+    },
+    "rotation": -56.61148642388851
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "CenteringNote"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "James SSTR"
+                      }
+                    },
+                    {
+                      "type": "wait",
+                      "data": {
+                        "waitTime": 0.5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "IntakeNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "CenteringNote"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

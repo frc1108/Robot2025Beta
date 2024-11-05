@@ -1,0 +1,115 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.5,
+        "y": 6.0
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.819860530630152,
+        "y": 4.920345440690882
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 5.033181702727042,
+        "y": 4.281894381970583
+      },
+      "prevControl": {
+        "x": 5.679333478203817,
+        "y": 3.4662601735818668
+      },
+      "nextControl": {
+        "x": 3.8950746992403076,
+        "y": 5.718521255224329
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 1.3669845521509223,
+        "y": 5.559932574410603
+      },
+      "prevControl": {
+        "x": 2.673008982381601,
+        "y": 5.503960098829289
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "Slow",
+      "minWaypointRelativePos": 1.85,
+      "maxWaypointRelativePos": 2.0,
+      "constraints": {
+        "maxVelocity": 1.5,
+        "maxAcceleration": 1.5,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "CenterNote",
+      "waypointRelativePos": 0.15,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "CenteringNote"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Shoot",
+      "waypointRelativePos": 1.9,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "ShootBackwards"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 2.5,
+    "maxAcceleration": 2.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

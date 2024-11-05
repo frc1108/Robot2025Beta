@@ -1,0 +1,43 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.919204747500404,
+      "y": 4.449811808714527
+    },
+    "rotation": -50.4037913602497
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James SSTFCN"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James CNTCLN"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James CLNTLN"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

@@ -1,0 +1,43 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.8818897637795275,
+      "y": 6.670053340106681
+    },
+    "rotation": 52.224315694045295
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "ShootBackwards"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James ASTFL"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "James LNT Amp"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "AmpShot"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
