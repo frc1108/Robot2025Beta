@@ -14,7 +14,7 @@ import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkFlex;
 import com.revrobotics.CANSparkLowLevel.MotorType;
 import com.revrobotics.SparkAbsoluteEncoder.Type;
-import com.revrobotics.SparkPIDController;
+import com.revrobotics.spark.SparkClosedLoopController;
 import com.revrobotics.AbsoluteEncoder;
 import com.revrobotics.RelativeEncoder;
 
@@ -28,8 +28,8 @@ public class MAXSwerveModule {
   private final RelativeEncoder m_drivingEncoder;
   private final AbsoluteEncoder m_turningEncoder;
 
-  private final SparkPIDController m_drivingPIDController;
-  private final SparkPIDController m_turningPIDController;
+  private final SparkClosedLoopController m_drivingPIDController;
+  private final SparkClosedLoopController m_turningPIDController;
 
   private double m_chassisAngularOffset = 0;
   private SwerveModuleState m_desiredState = new SwerveModuleState(0.0, new Rotation2d());

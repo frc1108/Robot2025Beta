@@ -6,7 +6,7 @@ package frc.robot.subsystems;
 
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.RelativeEncoder;
-import com.revrobotics.SparkPIDController;
+import com.revrobotics.spark.SparkClosedLoopController;
 
 import java.util.function.DoubleSupplier;
 
@@ -29,7 +29,7 @@ public class Arm extends TrapezoidProfileSubsystem {
   private final CANSparkMax m_leftMotor = new CANSparkMax(ArmConstants.kLeftArmMotorCanId, MotorType.kBrushless);
   private final CANSparkMax m_rightMotor = new CANSparkMax(ArmConstants.kRightArmMotorCanId, MotorType.kBrushless);
 
-  private final SparkPIDController m_pid;
+  private final SparkClosedLoopController m_pid;
   private final RelativeEncoder m_encoder;
 
   private final ArmFeedforward m_feedforward = 

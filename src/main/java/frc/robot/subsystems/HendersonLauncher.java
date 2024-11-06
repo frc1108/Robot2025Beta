@@ -7,7 +7,7 @@ package frc.robot.subsystems;
 import com.revrobotics.CANSparkBase.ControlType;
 import com.revrobotics.CANSparkBase.IdleMode;
 import com.revrobotics.CANSparkFlex;
-import com.revrobotics.SparkPIDController;
+import com.revrobotics.spark.SparkClosedLoopController;
 import com.revrobotics.RelativeEncoder;
 import com.revrobotics.CANSparkLowLevel.MotorType;
 
@@ -22,7 +22,7 @@ public class HendersonLauncher extends SubsystemBase implements Logged{
   private final CANSparkFlex m_leftMotor = new CANSparkFlex(HendersonConstants.kLeftLauncherMotorCanId,MotorType.kBrushless);
   private final CANSparkFlex m_rightMotor = new CANSparkFlex(HendersonConstants.kRightLauncherMotorCanId,MotorType.kBrushless);
   private final RelativeEncoder m_encoder;
-  private final SparkPIDController m_pidController;
+  private final SparkClosedLoopController m_pidController;
   private double m_goal = 0;
   private boolean m_enabled = false;
 
